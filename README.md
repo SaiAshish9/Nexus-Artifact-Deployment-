@@ -6,10 +6,10 @@ https://help.sonatype.com/repomanager3/product-information/download
 tar xvzf nexus-3.47.1-01-unix.tar.gz
 
 Two folders will be created
-/nexus-3.33.0-01
+/nexus-3.47.1-01
 /sonatype-work
 
-cd nexus-3.33.0–01/bin
+cd nexus-3.47.1-01/bin
 ./nexus run
 
 admin password:
