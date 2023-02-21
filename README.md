@@ -86,6 +86,6 @@ repositories {
 
 <img width="1166" alt="Screenshot 2023-02-22 at 12 54 57 AM" src="https://user-images.githubusercontent.com/43849911/220439657-4aab57cd-1ddc-4591-9a11-f5fc994b66c0.png">
 
-<img width="1187" alt="Screenshot 2023-02-22 at 1 05 47 AM" src="https://user-images.githubusercontent.com/43849911/220441643-1e78f3b5-1d75-4aa6-a9ee-df0577a51757.png">
+<img width="1193" alt="Screenshot 2023-02-22 at 1 13 15 AM" src="https://user-images.githubusercontent.com/43849911/220442991-1c1d2362-7c49-4e6a-ae4f-2bb8111818c4.png">
 
-<img width="1152" alt="Screenshot 2023-02-22 at 1 06 26 AM" src="https://user-images.githubusercontent.com/43849911/220441757-6274f02e-bfde-48d7-a265-bd67b6cd4e15.png">
+<img width="1155" alt="Screenshot 2023-02-22 at 1 13 31 AM" src="https://user-images.githubusercontent.com/43849911/220443031-e32df44e-c534-4bf6-b98b-b82012b08220.png">
