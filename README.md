@@ -90,13 +90,4 @@ repositories {
 
 <img width="1155" alt="Screenshot 2023-02-22 at 1 13 31 AM" src="https://user-images.githubusercontent.com/43849911/220443031-e32df44e-c534-4bf6-b98b-b82012b08220.png">
 
-<img width="1181" alt="Screenshot 2023-02-22 at 1 25 38 AM" src="https://user-images.githubusercontent.com/43849911/220445295-9848cd77-470c-4ac5-b24e-27b2d03ea94f.png">
-
-<img width="1194" alt="Screenshot 2023-02-22 at 1 27 08 AM" src="https://user-images.githubusercontent.com/43849911/220445602-82cda0bd-16b5-4ba4-a2ac-4ddac1874c8a.png">
-
-<img width="1098" alt="Screenshot 2023-02-22 at 1 27 39 AM" src="https://user-images.githubusercontent.com/43849911/220445702-619774f1-09ce-499d-80aa-8c35eca3e12f.png">
-
-<img width="1193" alt="Screenshot 2023-02-22 at 1 29 17 AM" src="https://user-images.githubusercontent.com/43849911/220446017-ca6b6e19-98fd-41a0-a4bb-03449a79ccc1.png">
-
-<img width="1785" alt="Screenshot 2023-02-22 at 2 12 22 AM" src="https://user-images.githubusercontent.com/43849911/220454029-4e43754d-9564-4784-a19f-f05520ab74dc.png">
-
+<img width="1782" alt="Screenshot 2023-02-22 at 2 14 41 AM" src="https://user-images.githubusercontent.com/43849911/220454619-88e96d43-bec2-41d1-bc7b-915af3d908bb.png">
