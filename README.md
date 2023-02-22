@@ -17,7 +17,7 @@ No suitable Java Virtual Machine could be found on your system.
 The version of the JVM must be 1.8.
 Please define INSTALL4J_JAVA_HOME to point to a suitable JVM.
 
-export INSTALL4J_JAVA_HOME=/usr/local/opt/openjdk@8/bin
+export INSTALL4J_JAVA_HOME=/usr/local/opt/openjdk@8/
 
 ./nexus run   
 2023-02-22 00:30:28,018+0530 INFO  [FelixStartLevel] *SYSTEM org.sonatype.nexus.pax.logging.NexusLogActivator - start
