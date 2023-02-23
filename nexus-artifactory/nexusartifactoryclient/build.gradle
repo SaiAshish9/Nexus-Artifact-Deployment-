@@ -1,0 +1,95 @@
+plugins {
+    id 'java'
+    id("io.spring.dependency-management")
+}
+
+apply plugin: 'maven-publish'
+apply plugin: 'java-library'
+apply plugin: 'idea'
+
+group = 'nexus'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+ext {
+    springBootVersion = "2.5.4"
+    openFeignVersion = "11.1"
+}
+
+ext.moduleClassPath = { moduleName ->
+    def classOutputDirConst = "/classes/java/main"
+    return "${project(":${moduleName}").buildDir}${classOutputDirConst}"
+}
+
+ext.moduleSourcePath = { moduleName ->
+    def sourceDirConst = "/src/main/java"
+    return "${project(":${moduleName}").projectDir}${sourceDirConst}"
+}
+
+task sourcesJar(type: Jar) {
+    from(moduleSourcePath("nexusartifactoryclient"), moduleSourcePath("beans"))
+    classifier "sources"
+}
+
+
+jar {
+    from(moduleClassPath("nexusartifactoryclient"), moduleClassPath("beans"))
+}
+
+repositories {
+    jcenter()
+    maven {
+        url "http://localhost:8081/repository/maven-snapshots/"
+        setAllowInsecureProtocol(true)
+        credentials {
+            username = "admin"
+            password = "admin"
+        }
+    }
+}
+
+task sourceJar (type : Jar) {
+    classifier = ''
+    from sourceSets.main.allSource
+}
+
+publishing {
+    publications {
+        myPublication(MavenPublication) {
+            artifact (sourceJar) {
+                classifier = 'sources'
+            }
+        }
+    }
+    repositories {
+        maven {
+            url "http://localhost:8081/repository/maven-snapshots/"
+            setAllowInsecureProtocol(true)
+            credentials {
+                username = "admin"
+                password = "admin"
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation("io.github.openfeign:feign-core:${openFeignVersion}")
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation("io.github.openfeign.form:feign-form:3.8.0")
+    implementation 'io.github.openfeign.form:feign-form-spring:3.8.0'
+    api project (":beans")
+}
+
+dependencyManagement {
+    imports {
+        mavenBom("io.github.openfeign:feign-bom:${openFeignVersion}")
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:2020.0.4"
+        mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
+    }
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+

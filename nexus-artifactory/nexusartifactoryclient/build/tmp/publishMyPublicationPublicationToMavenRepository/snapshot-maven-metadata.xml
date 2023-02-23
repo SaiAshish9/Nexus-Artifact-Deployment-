@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata modelVersion="1.1.0">
-  <groupId>com.sai9</groupId>
-  <artifactId>nexus-artifactory</artifactId>
+  <groupId>nexus</groupId>
+  <artifactId>nexusartifactoryclient</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <versioning>
     <snapshot>
-      <timestamp>20230222.183037</timestamp>
+      <timestamp>20230223.041618</timestamp>
       <buildNumber>2</buildNumber>
     </snapshot>
-    <lastUpdated>20230222183037</lastUpdated>
+    <lastUpdated>20230223041618</lastUpdated>
     <snapshotVersions>
       <snapshotVersion>
         <extension>pom</extension>
-        <value>0.0.1-20230222.183037-2</value>
-        <updated>20230222183037</updated>
+        <value>0.0.1-20230223.041618-2</value>
+        <updated>20230223041618</updated>
       </snapshotVersion>
       <snapshotVersion>
         <classifier>sources</classifier>
         <extension>jar</extension>
-        <value>0.0.1-20230222.183037-2</value>
-        <updated>20230222183037</updated>
+        <value>0.0.1-20230223.041618-2</value>
+        <updated>20230223041618</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>

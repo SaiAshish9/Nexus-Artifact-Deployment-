@@ -1,14 +1,35 @@
 package com.sai.nexusartifactory.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.sai.nexusartifactory.NexusArtifactoryClient;
+import com.sai.nexusartifactory.entity.RequestDto;
+import com.sai.nexusartifactory.entity.ResponseDto;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
 public class NexusController {
+
+    @Autowired
+    NexusArtifactoryClient nexusArtifactoryClient;
 
     @GetMapping("/")
     public String nexusMapping(){
-        return "NEXUS MAPPING";
+        return "PENDING";
+    }
+
+    @PostMapping("/")
+    public String postMapping(){
+        String status = nexusArtifactoryClient.getNexus();
+        return status;
+    }
+
+    @PostMapping("/test")
+    public ResponseDto postMappingTest(@RequestBody RequestDto requestDto){
+        ResponseDto responseDto = new ResponseDto();
+        responseDto.setStatus(requestDto.getStatus());
+        return responseDto;
     }
 
 }
