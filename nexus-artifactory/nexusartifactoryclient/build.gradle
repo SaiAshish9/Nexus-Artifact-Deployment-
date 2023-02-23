@@ -48,11 +48,6 @@ repositories {
     }
 }
 
-task sourceJar (type : Jar) {
-    classifier = ''
-    from sourceSets.main.allSource
-}
-
 publishing {
     publications {
         myPublication(MavenPublication) {

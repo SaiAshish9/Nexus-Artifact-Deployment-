@@ -2,8 +2,6 @@ package com.sai.nexusartifactory.configuration.launcher;
 
 import com.sai.nexusartifactory.NexusArtifactoryClient;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration;
-import org.springframework.boot.autoconfigure.web.servlet.DispatcherServletRegistrationBean;
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
 import org.springframework.context.annotation.*;
 
